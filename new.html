@@ -19,26 +19,27 @@
     </div>
 
     <div class="social-icon">
-        <img src="./g.png" alt="">
-        <img src="./git.png" alt="">
-        <img src="./link.png" alt="">
-    </div>
-
-    
-
+        <a href="https://accounts.google.com/Login/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin&cid=1&TL=AM3QAYZLjxIhXRqAniUqC-BMkSrQoNisoKEgYTWec4kp9Qp68yoilnCR6tO2Fy88"><img src="./g.png" alt=""  ></a>
+        
+        
+        <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home"> <img src="./git.png" alt=""></a>
+         
+        <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin">   <img src="./link.png" alt=""></a> 
+    </div>    
+        
 <form  class="input" id="login">
-    <input class="input-box" type="text" placeholder=" User Id" required>
-    <input class="input-box" type="text" placeholder=" Enter password" required><br>
+    <input class="input-box" type="text" placeholder=" User Id" required*>
+    <input class="input-box" type="text" placeholder=" Enter password" required>
     <input type="checkbox"  class="checkbox"><span>Remember password</span>
-    <input  type="button" value="Log In" class="submit-btn">
-    </form> 
+    <button   type="button"   class="submit-btn"> Log In </button>      
+</form> 
 <form  class="input" id="resigster">
 
     <input class="input-box"  type="text" placeholder=" User Id" required>
     <input class="input-box" type="email" placeholder=" Enter email" required>
     <input class="input-box" type="text" placeholder=" Enter password" required>
     <input  type="checkbox"  class="checkbox" ><span> I agree to term and condition*</span>
-    <input type="button" value="Resigster" class="submit-btn">
+    <button type="button"  class="submit-btnr submit-btn"> Resigster </button>
     
 </form> 
 </div>
@@ -50,6 +51,8 @@
   var x = document.getElementById('login');
   var y = document.getElementById('resigster');
   var z = document.getElementById('btn');
+  var xy = document.querySelector(".submit-btn");
+  var yz = document.querySelector(".submit-btnr");
    
     function resigster(){
         x.style.left = "-400px";
@@ -62,6 +65,17 @@
           z.style.left = "0px";
      
         }
+
+        xy.addEventListener("click",()=>{
+            alert("Login successfully")
+            // console.log("click")
+        })
+
+        yz.addEventListener("click",()=>{
+            alert("Resigstration successfully done!")
+            console.log("click")
+        })
+
 
 </script>
 </body>

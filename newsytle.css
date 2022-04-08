@@ -51,9 +51,12 @@ img {
      height: 40px;
      width: 40px;
      border-radius: 30px;
+     margin-left: 10px;
+     margin-right: 10px;
 }
 .social-icon {
     text-align: center;
+
 }
 .input-box{
     width: 100%;
@@ -77,7 +80,7 @@ img {
 span{
   text-align: center;
 }
-.submit-btn{
+.submit-btn {
     background: linear-gradient(to right , #ff105f, #ffad06);
     border-radius: 30px;
     border-bottom: none;
