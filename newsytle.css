@@ -9,7 +9,7 @@
     background-image: url(./background2.png);
     background-position: center;
     background-size: cover;
-    position: absolute;
+    position :fixed;
 }
 .newform{
     width: 380px ;
@@ -67,6 +67,8 @@ img {
     border-right: none;
     outline: none;
     background: transparent;
+    border-bottom: 2px solid  black ;
+    
 }
 .input{
      position: absolute;
