@@ -9,8 +9,8 @@ function resigster(){
   }
   function login(){
       x.style.left = "50px";
-      y.style.left = "450px";
-      z.style.left = "0px";
+      y.style.left = "450px";    
+    ;  z.style.left = "0px";
       
   }
   const resigsterbutton = document.querySelector(".submit-btnr");
@@ -27,27 +27,31 @@ function resigster(){
   let password = []
 
   resigsterbutton.addEventListener('click' , resigsterpage );
-  function resigsterpage(){
+   function resigsterpage(){
       if((resiuserid.value.length == 5)&&(resipass.value.length > 8 && resipass.value.length < 16 )&&(resiuserid.value.length != 0 && resipass.value.length !=0)){
       userid.push(resiuserid.value);
       password.push(resipass.value);
-      alert('you are successfully res gister')
-      resiuserid.value = ''
-      resipass.value  = ''
-      resiemailid = ''
+      alert('you are successfully resgister')
+      p.style.color = `black`;
+      p1.style.color = `black`;
+      resiuserid.value = '';
+      resipass.value  = '';
+      resiemailid = '';
       }else{
       p.style.color = `red`;
       p1.style.color = `red`;
-      resiuserid.value = ''
-      resipass.value  = ''
-      resiemailid = ''
+      resiuserid.value = '';
+      resipass.value  = '';
+      resiemailid = '';
 }
               
 }
   loginbutton.addEventListener('click' , logincheck);
   function logincheck(){
       if((loginUserid.value == userid && loginPass.value == password)&&(loginUserid.value != 0 && loginPass.value !=0 )){
-      alert('successfully login')
+      alert('Successfully login')
+      loginUserid.value = ''
+      loginPass.value = ''
       }else{
       alert("Resigster not done ! Go and resigster ") 
       loginUserid.value = ''
